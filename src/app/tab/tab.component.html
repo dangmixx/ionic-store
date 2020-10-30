@@ -1,0 +1,19 @@
+<ion-tabs class="tab-main">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="navigateTab('tab-1')">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+      <!-- <ion-badge>6</ion-badge> -->
+    </ion-tab-button>
+
+    <ion-tab-button (click)="navigateTab('tab-2')">
+      <ion-icon name="planet"></ion-icon>
+      <ion-label>Planet</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="navigateTab('tab-3')">
+      <ion-icon name="settings"></ion-icon>
+      <ion-label>Setting</ion-label>
+    </ion-tab-button> 
+  </ion-tab-bar>
+</ion-tabs>
