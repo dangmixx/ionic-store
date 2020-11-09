@@ -1,0 +1,11 @@
+<ion-card class="card-container" *ngIf="!!item">
+  <div class="img-card" [ngStyle]="{ 'background-image': 'url(' + item.imageUrl + ')' }"></div>
+  <!-- <img [src]="item.imageUrl" /> -->
+  <ion-card-header class="card-header">
+    <ion-card-title class="name-product"> {{ item.name }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <span *ngIf="!!item.oldPrice" class="old-price--card"> {{ item.oldPrice | currency: 'VND':'' }}đ </span>
+    <span class="price--card"> {{ item.price | currency: 'VND':'' }}đ </span>
+  </ion-card-content>
+</ion-card>

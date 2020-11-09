@@ -6,7 +6,8 @@ import { TabComponent } from './tab.component';
 const routes: Routes = [
   {
     path: '',
-    component: TabComponent,
+    redirectTo: 'tab-1',
+    pathMatch: 'full',
   },
   {
     path: 'tab-1',

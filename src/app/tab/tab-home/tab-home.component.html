@@ -7,43 +7,13 @@
   </ion-toolbar>
 </ion-header>
 <ion-content fullScreen>
-  <ion-card>
-    <!-- <img src="./madison.jpg" /> -->
-    <ion-card-header>
-      <ion-card-subtitle>Subtitle Card</ion-card-subtitle>
-      <ion-card-title>Title Card</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use
-      ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card content show
-      message, use ion-card-contend Card content show message, use ion-card-contend Card content show message, use ion-card-contend Card
-      content show message, use ion-card-contend
-    </ion-card-content>
-  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of listData; let i = index" size="6">
+        <app-product-card [item]="item"></app-product-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 <ion-tabs class="tab-main">
   <ion-tab-bar slot="bottom">

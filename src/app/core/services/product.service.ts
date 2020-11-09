@@ -1,0 +1,123 @@
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { IProductCardModel } from '../models/product-card';
+
+@Injectable()
+export class ProductService {
+  constructor() {}
+
+  searchProduct(): Observable<IProductCardModel[]> {
+    return of([
+      {
+        id: '000',
+        imageUrl: 'assets/images/macbook-gold.png',
+        name: 'Macbook 15" i7 16G 512G SSD',
+        title: 'Item 1 ',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '10000',
+        oldPrice: '110000000',
+        starts: 5,
+      },
+      {
+        id: '003',
+        imageUrl: 'assets/images/surface-2020.png',
+        name: 'Laptop Surface 2020 15" i9-9k 16G 1TB SSD ',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '24500000',
+        oldPrice: '26000000',
+        starts: 5,
+      },
+      {
+        id: '002',
+        imageUrl: 'assets/images/thinkpad-1.png',
+        name: 'Laptop Thinkpad i7-10k 16G 512G SSD',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '24900000',
+        oldPrice: '28000000',
+        starts: 5,
+      },
+      {
+        id: '003',
+        imageUrl: 'assets/images/hp-2020.png',
+        name: 'Laptop HP i7-10k 16G 512G SSD',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '28900000',
+        oldPrice: '31000000',
+        starts: 5,
+      },
+      {
+        id: '004',
+        imageUrl: 'assets/images/hp-2020.png',
+        name: 'Laptop HP i7-10k 16G 512G SSD',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '28900000',
+        oldPrice: '31000000',
+        starts: 5,
+      },
+      {
+        id: '005',
+        imageUrl: 'assets/images/hp-2020.png',
+        name: 'Laptop HP i7-10k 16G 512G SSD',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '28900000',
+        oldPrice: '31000000',
+        starts: 5,
+      },
+      {
+        id: '006',
+        imageUrl: 'assets/images/hp-2020.png',
+        name: 'Laptop HP i7-10k 16G 512G SSD',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '28900000',
+        oldPrice: '31000000',
+        starts: 5,
+      },
+      {
+        id: '007',
+        imageUrl: 'assets/images/hp-2020.png',
+        name: 'Laptop HP i7-10k 16G 512G SSD',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '28900000',
+        oldPrice: '31000000',
+        starts: 5,
+      },
+      {
+        id: '008',
+        imageUrl: 'assets/images/hp-2020.png',
+        name: 'Laptop HP i7-10k 16G 512G SSD',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '28900000',
+        oldPrice: '31000000',
+        starts: 5,
+      },
+      {
+        id: '009',
+        imageUrl: 'assets/images/hp-2020.png',
+        name: 'Laptop HP i7-10k 16G 512G SSD',
+        title: 'Item 1',
+        subTitle: 'SubTitle Item 1',
+        description: 'Item 1 for demo',
+        price: '28900000',
+        oldPrice: '31000000',
+        starts: 5,
+      },
+    ]);
+  }
+}
