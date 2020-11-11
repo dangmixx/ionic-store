@@ -1,0 +1,14 @@
+.star-voted {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .star {
+    color: var(--star-voted);
+  }
+  .sum-voted {
+    margin-left: 3px;
+    font-size: 15px;
+    color: var(--gray);
+  }
+}

@@ -1,0 +1,18 @@
+<ul class="star-voted">
+  <li>
+    <ion-icon class="star" [name]="starVoted > 0 ? 'star' : 'star-outline'"></ion-icon>
+  </li>
+  <li>
+    <ion-icon class="star" [name]="starVoted > 1 ? 'star' : 'star-outline'"></ion-icon>
+  </li>
+  <li>
+    <ion-icon class="star" [name]="starVoted > 2 ? 'star' : 'star-outline'"></ion-icon>
+  </li>
+  <li>
+    <ion-icon class="star" [name]="starVoted > 3 ? 'star' : 'star-outline'"></ion-icon>
+  </li>
+  <li>
+    <ion-icon class="star" [name]="starVoted > 4 ? 'star' : 'star-outline'"></ion-icon>
+  </li>
+  <li class="sum-voted">({{ starVoted }})</li>
+</ul>

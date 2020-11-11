@@ -1,0 +1,10 @@
+<app-toolbar-header [titleHeader]="'List Product'"> </app-toolbar-header>
+<ion-content fullScreen>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of listData; let i = index" size="6">
+        <app-product-card [item]="item" (click)="goDetailProduct(item)"></app-product-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" class="arrow-back">
+          <ion-icon name="arrow-back-outline" (click)="goBack()"></ion-icon>
+        </ion-col>
+
+        <ion-col size="6" class="header-toolbar">
+          <div class="block-item--header">
+            <div class="badge--header">
+              <ion-badge>5</ion-badge>
+              <ion-icon name="notifications-outline"> </ion-icon>
+            </div>
+            <div class="badge--header">
+              <ion-badge>5</ion-badge>
+              <ion-icon name="cart-outline"> <ion-badge>5</ion-badge></ion-icon>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullScreen>
+  <div *ngIf="productDetail">
+    <div class="img--product-detail" [ngStyle]="{ 'background-image': 'url(' + productDetail.imageUrl + ')' }"></div>
+
+    <div class="product-page--content block-app">
+      <div class="product-name">
+        {{ productDetail.name }}
+      </div>
+      <app-star-voted [starVoted]="3"></app-star-voted>
+      <div class="price-container">
+        <span class="price">{{ productDetail.price | currency: 'VND' }}</span>
+        <span class="old-price">{{ productDetail.oldPrice | currency: 'VND' }}</span>
+      </div>
+    </div>
+
+    <div class="info-detail block-app">
+      {{ productDetail.description }}
+    </div>
+  </div>
+</ion-content>

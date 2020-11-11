@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2" class="arrow-back">
+          <ion-icon *ngIf="canBack !== false" name="arrow-back-outline" (click)="backHome()"></ion-icon>
+        </ion-col>
+        <ion-col size="6">
+          <ion-input class="input--search-header" clearInput>
+            <ion-icon slot="start" name="search" align-self-center></ion-icon>
+          </ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <div class="badge--header">
+            <ion-badge>5</ion-badge>
+            <ion-icon name="notifications"> </ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="2">
+          <div class="badge--header">
+            <ion-badge>5</ion-badge>
+            <ion-icon name="cart"> <ion-badge>5</ion-badge></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
